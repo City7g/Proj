@@ -12,6 +12,11 @@
       <p class="pointer__fine">Pointer fine</p>
       <p class="pointer__none">Pointer none</p>
     </div>
+
+    <div class="orientation">
+      <p class="orientation__landscape">Orientation landscape</p>
+      <p class="orientation__portrait">Orientation portrait</p>
+    </div>
   </div>
 </template>
 
@@ -42,6 +47,18 @@
 
 @media (pointer: none) {
   .pointer__none {
+    color: red;
+  }
+}
+
+@media (orientation: landscape) {
+  .orientation__landscape {
+    color: red;
+  }
+}
+
+@media (orientation: portrait) {
+  .orientation__portrait {
     color: red;
   }
 }
