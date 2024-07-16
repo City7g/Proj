@@ -22,6 +22,11 @@
       <p class="scheme__dark">Scheme dark</p>
       <p class="scheme__light">Scheme light</p>
     </div>
+
+    <div class="motion">
+      <p class="motion__no-preference">Motion no-preference</p>
+      <p class="motion__reduce">Motion reduce</p>
+    </div>
   </div>
 </template>
 
@@ -76,6 +81,18 @@
 
 @media (prefers-color-scheme: light) {
   .scheme__light {
+    color: red;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .motion__no-preference {
+    color: red;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .motion__reduce {
     color: red;
   }
 }
