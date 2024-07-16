@@ -17,6 +17,11 @@
       <p class="orientation__landscape">Orientation landscape</p>
       <p class="orientation__portrait">Orientation portrait</p>
     </div>
+
+    <div class="scheme">
+      <p class="scheme__dark">Scheme dark</p>
+      <p class="scheme__light">Scheme light</p>
+    </div>
   </div>
 </template>
 
@@ -59,6 +64,18 @@
 
 @media (orientation: portrait) {
   .orientation__portrait {
+    color: red;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .scheme__dark {
+    color: red;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  .scheme__light {
     color: red;
   }
 }
