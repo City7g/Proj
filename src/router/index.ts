@@ -22,6 +22,11 @@ const router = createRouter({
       name: 'media',
       component: () => import('../views/Media.vue'),
     },
+    {
+      path: '/screen',
+      name: 'screen',
+      component: () => import('../views/Screen.vue'),
+    },
   ],
 })
 
